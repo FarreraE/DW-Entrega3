@@ -1,0 +1,42 @@
+.home__container {
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    @include flex(column, center);
+    @include animation(backgroundTV, 9s, normal, infinite,0);
+
+    .home__image {
+        height: 35%;
+        width: 50%;
+        @include animation(float, 5s, alternate, infinite,0);
+        .home__image--logo {
+            width: 100%;
+            position: absolute;     
+        }
+    }
+    .home_nav {
+        height: 35%;
+        width: 50%;
+        padding: 2%;
+        margin-left:2% ;
+        .home__ul {
+            @include flex(column, center);
+            @include animation(showUp, 4s, normal, 1,3);
+            .home__ul--linkA {
+                @include font(PersonalUse, 4rem, bolder, #000);
+                @include animation(glitchText, 2s, alternate, infinite,3);
+            }
+            .home__linkA:hover {
+                @include font(PersonalUse, 4.5rem, bolder, #ffffff);
+
+            }
+        }
+    }
+    #logoBlue {
+        @include animation(logoBlue, 5s, alternate, infinite,0);
+    }
+
+    #logoRed {
+        @include animation(logoRed, 5s, alternate, infinite,0);
+    }
+}

@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PersonalUse";
+  src: url("Fuentes/Patron - PersonalUse.otf");
+}
+
+@font-face {
+  font-family: "consola";
+  src: url("../css/Fuentes/CONSOLA.TTF");
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: "PersonalUse";
+}
+
+.contentHome {
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.contentHome .imageHome {
+  height: 300px;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contentHome .imageHome .homeLogo {
+  position: absolute;
+  width: 100%;
+}
+
+.contentHome .navHome {
+  height: 300px;
+  width: 800px;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.contentHome .navHome .navHomeUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentHome .navHome .navHomeUl .homeLink {
+  font-family: "PersonalUse";
+  font-size: 4rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000;
+  animation-name: glitchText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contentHome #logoBlue {
+  opacity: 0.5;
+  animation-name: logoBlue;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contentHome #logoRed {
+  opacity: 0.5;
+  animation-name: logoRed;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.homeBG {
+  width: 100%;
+  height: 100vh;
+  animation-name: backgroundTV;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.contentElyizus {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.contentElyizus .h2Tittle {
+  font-family: "PersonalUse";
+  font-size: 5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000;
+  animation-name: glitchText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contentElyizus .elyizusNav {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+.contentElyizus .elyizusNav .elyizusNavButton {
+  width: 244px;
+  font-family: "PersonalUse";
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin: auto;
+  border: #ffffff solid 2px;
+  border-radius: 20px;
+}
+
+.contentElyizus .elyizusNav .elyizusNavButtonSelected {
+  width: 244px;
+  font-family: "PersonalUse";
+  background-color: #ffffff;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: auto;
+  border: #000 solid 3px;
+  animation-name: glitchText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contentElyizus .elyizusNav .elyizusNavButtonSelected .elyizusDisplayBox {
+  width: 1000px;
+  height: 250px;
+  border: #000 solid 5px;
+  border-radius: 20px;
+  padding: 2%;
+  font-family: "consola";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: justify;
+  animation-name: glitchBox;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: none;
+}
+
+.contentElyizus .elyizusDisplay {
+  padding: 1%;
+}
+
+.contentElyizus .elyizusDisplay .elyizusDisplayBox {
+  width: 1000px;
+  height: 250px;
+  border: #000 solid 5px;
+  border-radius: 20px;
+  padding: 2%;
+  font-family: "consola";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: justify;
+  animation-name: glitchBox;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: none;
+}
+
+.contentElyizus .elyizusDisplay .elyizusDisplayBox .elyizusFooterLeft {
+  height: 100%;
+  width: 20%;
+}
+
+.contentElyizus .elyizusDisplay .elyizusDisplayBox .elyizusFooterCenter {
+  height: 100%;
+  width: 50%;
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentElyizus .elyizusDisplay .elyizusDisplayBox .elyizusFooterRight {
+  height: 100%;
+  width: 20%;
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.contentElyizus .elyizusFooterBox {
+  margin-top: 3%;
+  width: 1000px;
+  height: 225px;
+  /*border: #000 solid 5px;*/
+  border-radius: 20px;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#proyects {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#proyects .tv {
+  margin-top: 10px;
+  width: 1000px;
+  height: 450px;
+  border-radius: 20px;
+  border: #ffffff solid 5px;
+  padding: auto;
+  animation-name: backgroundTV;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#proyects .tv .h2Tittle {
+  font-family: "PersonalUse";
+  font-size: 5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000;
+  animation-name: glitchText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#proyects .proyectoLogos {
+  margin-top: 50px;
+}
+
+#proyects .proyectoLogos .imgProyectoLogos:hover {
+  animation-name: backgroundTV2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-blend-mode: lighten;
+}
+
+footer {
+  border-top: #ffffff solid 15px;
+  background: #000;
+  grid-area: footer;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 0.4fr 0.5fr;
+  grid-template-areas: "footerLeft footerCenterTop footerRight" "footerLeft footerCenterBottom footerRight";
+  color: #ffffff;
+}
+
+footer .footerLeft {
+  grid-area: footerLeft;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-size: 1.8em;
+  font-family: "LemonMilk";
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+footer .footerLeft .footerLink {
+  font-family: "PersonalUse";
+  font-size: 2rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: #ffffff;
+  animation-name: glitchText;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+footer .footerCenterTop {
+  grid-area: footerCenterTop;
+  font-family: "PersonalUse";
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3em;
+  padding-top: 2%;
+  flex-wrap: wrap;
+  animation-name: glitchText;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+footer .footerCenterBottom {
+  grid-area: footerCenterBottom;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+footer .footerCenterBottom .imageFooter {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+footer .footerRight {
+  flex-wrap: wrap;
+  grid-area: footerRight;
+  padding-top: 15%;
+}
+
+footer .footerRight .logoFooterRight {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+footer .footerRight .logoFooterRight .homeLogo {
+  position: absolute;
+  width: 100%;
+}
+
+/* A N I M A C I O N E S */
+
+@keyframes backgroundTV {
+  0% {
+    background-color: black;
+  }
+  8% {
+    background-color: black;
+  }
+  9% {
+    background-color: white;
+  }
+  19% {
+    background-color: white;
+  }
+  20% {
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("/images/home/tv3.gif");
+  }
+}
+
+@keyframes backgroundTV2 {
+  from {
+    transform: scale(0.8);
+    background-image: url("/images/home/tv6.gif");
+  }
+  to {
+    transform: scale(1);
+    background-image: url("/images/home/tv4.gif");
+  }
+}
+
+@keyframes logoBlue {
+  from {
+    margin-top: -1.3%;
+    margin-left: -1.5%;
+  }
+  to {
+    margin-top: 1.1%;
+    margin-left: 1.6%;
+  }
+}
+
+@keyframes logoRed {
+  from {
+    margin-top: 1.3%;
+    margin-left: 1.6%;
+  }
+  to {
+    margin-top: -1.1%;
+    margin-left: -1.3%;
+  }
+}
+
+@keyframes glitchText {
+  from {
+    text-shadow: -2px -3px rgba(255, 11, 11, 0.5), 2px 3px rgba(0, 160, 198, 0.5);
+  }
+  to {
+    text-shadow: 2px 3px rgba(255, 11, 11, 0.5), -2px -3px rgba(0, 160, 198, 0.5);
+  }
+}
+
+@keyframes glitchBox {
+  from {
+    box-shadow: -2px -4px rgba(255, 11, 11, 0.5), 2px 4px rgba(0, 160, 198, 0.5);
+  }
+  to {
+    box-shadow: 2px 4px rgba(255, 11, 11, 0.5), -2px -4px rgba(0, 160, 198, 0.5);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

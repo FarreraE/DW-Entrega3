@@ -1,0 +1,94 @@
+#elyizus {
+    width: 100vw;
+    height: 100vh;
+
+    .elyizus__conteiner {
+        width: 100%;
+        height: 100%;
+        @include flex(column, space-around);
+
+        .h2Tittle {
+            height: 14%;
+            letter-spacing: 2rem;
+            @include flex(column, center);
+            @include font(PersonalUse, 3.8rem, bolder, #000);
+            @include animation(glitchText, 5s, alternate, infinite, 0);
+        }
+        .elyizus__nav {
+            width: 100%;
+            height: 5%;
+            background-color: #000;
+            @include flex(row, center);
+            .elyizus__nav--container {
+                width: 80%;
+                @include flex(row, space-around);
+                .elyizus__nav--button {
+                    width: 22%;
+                    margin: auto;
+                    background-color: #000;
+                    @include border(none);
+                    @include font(PersonalUse, 1.5rem, bold, #ffffff);
+                }
+                .elyizus__nav--button:hover {
+                    @include font(PersonalUse, 1.5rem, bold, #000);
+                    @include animation(glitchText, 1s, alternate, infinite, 0);
+                    cursor: pointer;
+                }
+                .elyizus__nav--buttonSelected {
+                    width: 15%;
+                    margin: auto;
+                    position: relative;
+                    transform: scale(1.3);
+                    background-color: #ffffff;
+                    @include border(#000 solid 4px);
+                    @include font(PersonalUse, 1.2rem, bolder, #000);
+                    @include animation(glitchBox, 3s, alternate, infinite, 0);
+                }
+            }
+        }
+        .elyizus__display {
+            width: 100%;
+            margin: auto;
+            @include flex(row, center);
+            .elyizus__display--box {
+                width: 1200px;
+                height: 300px;
+                padding: 1%;
+                display: none;
+                text-align: justify;
+                @include border(#000 solid 6px);
+                @include font(consola, 1.5rem, bold, #000);
+                @include animation(glitchBox, 5s, alternate, infinite, 0);
+            }
+        }
+        .elyizus__footer {
+            width: 80%;
+            margin-bottom: 1%;
+            @include flex(row, space-evenly);
+            .elyizus__footer__siteA {
+                width: 20%;
+                .elyizus__footer-img {
+                    transform: scale(0.7);
+                }
+            }
+            .elyizus__footer__center {
+                width: 100%;
+                @include flex(row, space-evenly);
+                .elyizus__footer__center--main {
+                    width: 100%;
+                    @include flex(row, space-evenly);
+                    display: none;
+                }
+                .elyizus__footer-img {
+                    transform: scale(0.7);
+                }
+            }
+            .elyizus__footer__siteB {
+                width: 20%;
+                .elyizus__footer-img {
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
+}

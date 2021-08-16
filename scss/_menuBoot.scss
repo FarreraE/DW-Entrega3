@@ -1,0 +1,64 @@
+.menu__nav {
+    @include flex(row, center);
+    width: 100%;
+    height: 12%;
+
+    .menu__nav_display {
+        width: 70%;
+        @include flex(row, center);
+        float: right;
+        padding-top: 1%;
+
+        #menu__nav--style {
+            width: 80%;
+            list-style: none;
+            opacity: 0;
+            @include flex(row, space-around);
+            .menu__nav--style--linkA {
+                @include font(PersonalUse, 1.5rem, bolder, #551a8b);
+            }
+            .menu__nav--style--linkA:hover {
+                @include font(PersonalUse, 1.5rem, bolder, #401569);
+                @include animation(glitchText, 1s, alternate, infinite, 0);
+            }
+        }
+    }
+    #menu__NavBTN {
+        transform: scale(0.8);
+    }
+    #menu__NavBTN:hover {
+        cursor: pointer;
+    }
+}
+.menu__navP {
+    @include flex(row, center);
+    width: 100%;
+    height: 12%;
+
+    .menu__nav_displayP {
+        width: 70%;
+        @include flex(row, center);
+        float: right;
+        padding-top: 1%;
+
+        #menu__nav--styleP {
+            width: 80%;
+            list-style: none;
+            opacity: 0;
+            @include flex(row, space-around);
+            .menu__nav--style--linkAP {
+                @include font(PersonalUse, 1.5rem, bolder, #551a8b);
+            }
+            .menu__nav--style--linkAP:hover {
+                @include font(PersonalUse, 1.5rem, bolder, #401569);
+                @include animation(glitchText, 1s, alternate, infinite, 0);
+            }
+        }
+    }
+    #menu__NavBTNP {
+        transform: scale(0.8);
+    }
+    #menu__NavBTN:hoverp {
+        cursor: pointer;
+    }
+}

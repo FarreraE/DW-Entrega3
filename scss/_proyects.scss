@@ -1,0 +1,25 @@
+#proyects {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    @include flex(column, center);
+    @include font(PersonalUse, 5rem, bolder, #fff);
+    ;
+    .proyects__tv {
+        margin-top: 1%;
+        width: 1200px;
+        height: 400px;
+        @include flex(column, center);
+        @include border(#ffffff solid 5px);
+        .h2Tittle {
+            @include font(PersonalUse, 5rem, bolder, #000);
+            @include animation(glitchText, 5s, alternate,infinite, 0);
+        }
+    }
+    .proyects__display {
+        margin-top: 1%;
+        .proyects__display--modifier:hover {
+            @include animation(backgroundTV2, 5s, alternate,infinite, 0);
+        }
+    }
+}

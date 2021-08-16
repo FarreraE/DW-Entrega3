@@ -1,0 +1,66 @@
+main{
+    margin: auto;
+    width:100%;
+    height: 82%;
+    padding: 0.5%;
+    @include flex(column, center);
+    .top {
+        width: 100%;
+        height: 15%;
+        padding: 1%;
+        margin-top: 0.8%;
+        @include flex(row, space-between);
+        .top__title {
+            @include font(cerita, 5rem, bold, #000);
+            @include animation(glitchText, 5s, alternate, infinite);
+        }
+    }
+    .sidemain{
+        @include flex(row, space-between);
+        width: 100%;
+        height: 100%;
+    }
+    .sideA{
+        grid-area: side;
+        padding: 1%;
+        text-align: justify;
+        @include font(consola, 1rem, bolder, #000);
+        width: 30%;
+        height: 100%;
+        .description{
+            grid-area: display;
+            padding: 3%;
+            width: 100%;
+            height: 100%;
+            border: black solid 5px;
+            border-radius: 15px;
+            @include flex(column, space-around);
+            
+            .description__tittle{
+                @include font(PersonalUse, 1.5rem, bolder, #000);
+            }
+            #btnBootstrap{
+                @include font(cerita, 2rem, normal, #ffffff);
+            }
+        }
+        
+    }
+    .sideB{
+        grid-area: side;
+        padding: 1%;
+        text-align: justify;
+        @include font(consola, 1rem, bolder, #000);
+        @include flex(column, center);
+        width: 70%;
+        height: 100%;
+        .display{
+            grid-area: display;
+            padding: 2%;
+            width: 100%;
+            height: 100%;
+            border: black solid 5px;
+            border-radius: 15px;
+        }
+    }
+}
+

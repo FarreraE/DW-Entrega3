@@ -1,0 +1,147 @@
+/* A N I M A C I O N E S */
+
+@keyframes backgroundTV {
+    0% {
+        background-color: black;
+    }
+    40% {
+        background-color: black;
+    }
+    41% {
+        background-color: white;
+        background-image: none;
+    }
+    60% {
+        background-color: white;
+        background-image: none;
+    }
+    61% {
+        background-size: 100%;
+        background-image: url("../images/home/tv.gif");
+    }
+    80% {
+        background-size: 100%;
+        background-image: url("../images/home/tv.gif");
+    }
+    81% {
+        background-color: white;
+        background-image: none;
+    }
+    100% {
+        background-color: white;
+        background-image: none;
+    }
+}
+@keyframes showUp {
+    from {
+        display: none;
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    to {
+        display: block;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes showUpH {
+    from {
+        color: red;
+        display: none;
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        display: block;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes showUpHI {
+    from {
+        display: block;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        display: none;
+        opacity: 0;
+        transform: translateX(80px);
+    }
+}
+
+@keyframes backgroundTV2 {
+    from {
+        transform: scale(0.8);
+        background-image: url("/images/home/tv6.gif");
+    }
+    to {
+        transform: scale(1);
+        background-image: url("/images/home/tv4.gif");
+    }
+}
+
+@keyframes logoBlue {
+    from {
+        opacity: 0.5;
+        margin-top: -0.4%;
+        margin-left: -0.7%;
+    }
+    to {
+        opacity: 0.8;
+        margin-top: 0.4%;
+        margin-left: 0.7%;
+    }
+}
+
+@keyframes logoRed {
+    from {
+        opacity: 0.5;
+        margin-top: 0.4%;
+        margin-left: 0.7%;
+    }
+    to {
+        opacity: 0.8;
+        margin-top: -0.4%;
+        margin-left: -0.7%;
+    }
+}
+
+@keyframes glitchText {
+    from {
+        text-shadow: -2px -3px rgba(255, 11, 11, 0.5), 2px 3px rgba(0, 160, 198, 0.5);
+    }
+    to {
+        text-shadow: 2px 3px rgba(255, 11, 11, 0.5), -2px -3px rgba(0, 160, 198, 0.5);
+    }
+}
+
+@keyframes glitchBox {
+    from {
+        box-shadow: -2px -4px rgba(255, 11, 11, 0.5), 2px 4px rgba(0, 160, 198, 0.5);
+    }
+    to {
+        box-shadow: 2px 4px rgba(255, 11, 11, 0.5), -2px -4px rgba(0, 160, 198, 0.5);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-30px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes blackBackground {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: #000;
+    }
+}
